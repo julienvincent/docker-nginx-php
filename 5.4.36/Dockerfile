@@ -3,15 +3,13 @@ MAINTAINER Julien Vincent <julienlucvincent@gmail.com>
 
 ENV PHP_VERSION 5.4.39-0+deb7u2
 
-RUN usermod -a -G staff nginx
-
 RUN \
     apt-get update && \
     apt-get -y install \
     php5-cli=${PHP_VERSION} \
-    php5-fpm=${PHP_VERSION} \
-    php5-json=${PHP_VERSION} \
-    php5-mcrypt=${PHP_VERSION} && \
+    php5-fpm \
+    php5-json \
+    php5-mcrypt && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Add configs
