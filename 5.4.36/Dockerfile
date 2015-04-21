@@ -8,7 +8,6 @@ RUN usermod -a -G staff nginx
 RUN \
     apt-get update && \
     apt-get -y install \
-    php5=${PHP_VERSION} \
     php5-cli=${PHP_VERSION} \
     php5-fpm=${PHP_VERSION} \
     php5-json=${PHP_VERSION} \
