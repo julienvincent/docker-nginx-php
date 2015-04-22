@@ -5,18 +5,18 @@ This repository contains **Dockerfile** of [Nginx](http://nginx.org/) for [Docke
 
 ### Base Docker Image
 
-* [debian:wheezy](https://registry.hub.docker.com/u/alexisvincent/debian/)
+* [debian:wheezy](https://registry.hub.docker.com/u/library/debian/)
 
 
 ### Installation
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://registry.hub.docker.com/u/julienvincent/nginx/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull julienvincent/nginx`
+2. Download [automated build](https://registry.hub.docker.com/u/julienvincent/nginx-php/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull julienvincent/nginx-php`
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="julienvincent/nginx" github.com/julienvincent/docker-nginx`)
+   (alternatively, you can build an image from Dockerfile: `docker build -t="julienvincent/nginx-php" github.com/julienvincent/docker-nginx-php`)
 
 
 ### Usage
 
-    docker run -it --rm julienvincent/nginx
+    docker run -it --rm julienvincent/nginx-php
