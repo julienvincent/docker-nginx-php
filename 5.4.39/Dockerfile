@@ -12,6 +12,8 @@ RUN \
     php5-mcrypt && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN mkdir -p /data/www
+
 # Add configs
 COPY container/php_restrictions.conf /etc/nginx/global/php_restrictions.conf
 COPY container/static_asset_caching.conf /etc/nginx/global/static_asset_caching.conf
